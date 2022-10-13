@@ -54,9 +54,9 @@ NS_ASSUME_NONNULL_BEGIN
     
     _statusLabel.text = @"Starting test";
     
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        [self _runBenchmarks];
-    });
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        [self _runBenchmarks];
+//    });
 }
 
 // MARK: - Internal

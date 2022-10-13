@@ -192,7 +192,8 @@ static SCOfflineReconstructionManager *reconstructHelper(
     
     // Unfortunately, there's not a good way to get the number of *high-performance*
     // CPU cores on iOS, so we have to hard-code this for now
-    int threadCount = [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad ? 4 : 2;
+//    int threadCount = [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad ? 4 : 2;
+    int threadCount = 2;
     
     SCOfflineReconstructionManager *reconstruction = [[SCOfflineReconstructionManager alloc] initWithDevice:metalDevice
                                                                                                commandQueue:commandQueue
